@@ -10,8 +10,6 @@ services:
     links:
       - php
   php:
-    image: php:7-fpm
-    expose:
-      - 9000
+    build: ./php
     volumes:
       - .:/var/www
